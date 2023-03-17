@@ -1,0 +1,16 @@
+section{
+    height: 100%;   
+    overflow: hidden;  
+    margin: 0px; 
+    display: flex;  
+    box-sizing: border-box;
+}
+
+.side-bar{
+    flex-shrink: 0
+}
+
+.content{
+    width: 100%;
+    background: var(--color-secondary);
+}

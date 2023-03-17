@@ -1,0 +1,33 @@
+<section class="cooperative">
+    <app-stepper [steps]="['Início', 'Documentos', 'Dados cadastrais', 'Admissão']"
+    [activeStep]="2"
+    ></app-stepper>
+
+    <div class="cooperative-title">
+        <h4>Informe o CPF do futuro cooperado (a)</h4>
+        <span>Se necessário, você poderá duplicar uma conta existente ou pausar e retomar este cadastro futuramente.
+            Digite apenas os números (sem pontos ou traços). </span>
+    </div>
+    <div class="cooperative-form">
+        <div class="cooperative-form-content">
+            <form [formGroup]="form">
+                <label>CPF</label>
+                <div class="form-input">
+                    <input formControlName="cpf" type="text" mask='000.000.000-00'>
+                    <button class="btn btn-dark" [disabled]="!form.valid" (click)="consultCpf()">
+                        <span *ngIf="!loading">Consultar por CPF</span>
+                        <div  *ngIf="loading" class="spinner-border text-light spinner-sm" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                    </button>
+                </div>
+                <div class="msg-error" *ngIf="isformInvalid()"> 
+                   Informe um CPF válido.
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="card-info" *ngIf="showCard">
+        <app-card-info></app-card-info>
+    </div>
+</section>

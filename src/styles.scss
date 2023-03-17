@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --color-primary: #00FFFF;
+  --color-secondary: #E7EEF1;
+  --color-dark: #165C7D;
+  --color-danger: #ff0000;
+  --color-error: #C13018;
+  --white: #ffff;
+  --gray: #C6CED1;
+  --dark-gray: #4F575E;
+  --color-success:  #00C246;
+
+};
+
+$theme-colors: (
+  "primary": #00FFFF,
+  "secondary": #E7EEF1,
+  "success": #32CD32,
+  "info": #ADD8E6,
+  "warning": #FFD700,
+  "danger": #FF6347,
+  "light": #F8F9FA,
+  "dark": #165C7D
+);
+
+@import "node_modules/bootstrap/scss/bootstrap.scss";

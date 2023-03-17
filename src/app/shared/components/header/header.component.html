@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-left">
+      <app-breadcrumb></app-breadcrumb>
+    </div>
+    <div class="container-right">
+      <div class="notification-icon">
+        <a class="nav-link" href="#" >
+          <fa-icon [icon]="['far', 'bell']"></fa-icon>
+        </a>
+        <div class="notification">
+          {{notificationsQty}}
+        </div>
+      </div>
+
+      <button type="button" class="btn btn-lg btn-outline-dark">
+        {{'viacred' | uppercase}}
+      </button>
+
+      <!-- Criar componente para imagem de usuário -->
+      <div class="user-img">
+        <img src="../../../../assets/icons/icone-ailos.svg">
+      </div>
+      <!--  -->
+    </div>
+  </nav>

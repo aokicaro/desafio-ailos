@@ -1,0 +1,8 @@
+<h2>{{ title| uppercase}}</h2>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item active" *ngFor="let item of breadcrumb;">
+      <span >{{ item.label }}</span>
+    </li>
+  </ol>
+</nav>

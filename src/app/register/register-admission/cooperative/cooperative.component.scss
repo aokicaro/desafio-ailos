@@ -1,0 +1,48 @@
+.cooperative{
+    padding: 30px;
+    &-title{
+        max-width: 550px;
+        span{
+            font-size: small;
+            display: inline-block;
+            color: var(--dark-gray);
+            line-height: 15px;
+        }
+    }
+    &-form{
+        margin-top: 20px;
+        width: 18rem;
+        label{
+            margin: 5px 5px 5px 0px;
+            font-weight: bold;
+        }
+        button{
+            width: 172px;
+        }
+    }
+}
+
+.form-input{
+    width: 70rem;
+    display: flex;
+    gap: 10px;
+    input{
+        width: 270px;
+        &.ng-invalid.ng-touched{
+            border: 1px solid var(--color-error);
+        }
+    }
+}
+
+.msg-error{
+    color: var(--color-error);
+}
+
+.spinner-sm {
+    height: 1rem;
+    width: 1rem;
+}
+
+.card-info{
+    margin-top: 45px;
+}

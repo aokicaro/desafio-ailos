@@ -1,0 +1,11 @@
+<div class="stepper">
+    <div class="step" *ngFor="let step of steps; let i = index">
+      <div class="step-content" [ngClass]="{'active': i === 0}">
+        <div class="step-circle"></div>
+        <div>
+          <span class="step-label">{{step}}</span>
+        </div>
+      </div>
+      <div class="step-line"></div>
+    </div>
+  </div>
